@@ -1,0 +1,26 @@
+<mat-toolbar class="spacing">
+    <img src="../../../assets/att-logo.png" alt="" class="iconSize">   
+    <span>AT&T | ARMS - Accounts Receivable Management System</span>
+    <span></span>
+    <div class="hdDiv">
+      
+     <button mat-button [matMenuTriggerFor]="fileMenu">USER : Sameer Dhasmana</button>
+    <mat-menu #fileMenu="matMenu" yPosition="above">
+        <button mat-menu-item>View Profile</button>
+        <button mat-menu-item>Logout</button>
+    </mat-menu>
+     
+
+    <mat-form-field appearance="outline" >
+        <mat-label>Switch Environment</mat-label>
+        <mat-select  name="env">
+          <mat-option value="1">
+            Pre-Production
+          </mat-option>
+          <mat-option value="2">
+            Production
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+</mat-toolbar>

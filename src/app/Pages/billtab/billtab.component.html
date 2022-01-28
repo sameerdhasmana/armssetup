@@ -1,0 +1,18 @@
+<div class="container">
+    <mat-card>
+      
+      <div class="row">
+          <span>Bill Name</span>
+          <mat-form-field appearance="outline" class="wd80">
+              <mat-select  name="env" required ngModel>
+                <mat-option *ngFor="let billName of billNameList" [value]="billName.value">
+                  {{billName.label}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+      </div>
+         
+    </mat-card>
+  
+      </div>
+      <app-filter></app-filter>
